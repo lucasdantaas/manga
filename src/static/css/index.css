@@ -100,7 +100,7 @@ body {
     background: linear-gradient(to right, #FF8000, #FFFF00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 10px 20px;
+    padding: 10px 5px;
     border-radius: 20px;
     background-color: black;
     font-weight: bold;
@@ -114,7 +114,7 @@ body {
 .produtos {
    
     padding: 20px;
-    margin-bottom: -2px;
+    margin-bottom: -1px;
 }
 
 .produto {
