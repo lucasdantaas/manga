@@ -40,10 +40,9 @@ body {
 }
 
 .menu2 {
-    
+    display: flex;
     padding: 20px 0;
     overflow-x: auto;
-    white-space: nowrap;
     text-align: center;
     border-bottom: 1px solid #556b2f;
 }
@@ -57,7 +56,6 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 5px;
 }
