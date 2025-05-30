@@ -59,7 +59,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 5px;
 }
 
 .menu2 li a {
@@ -99,7 +99,7 @@ body {
 
 
 .produtos {
-    margin-top: -5px;
+    margin-top: -7px;
     background-color: #556b2f;
     color:#f2c68b;
     padding: 20px;
