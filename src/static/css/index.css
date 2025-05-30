@@ -6,43 +6,29 @@ body {
     padding: 0;
 }
 
-.logo {
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-}
 
-.carrosel{
+.conteudo{
     width: 100%;
-    height: 300px;
+    height: auto;
+  
+}
+
+.img{
+    width: 100%;
+    height: 250px;
     display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    background: linear-gradient(to right, #FF8000, #FFFF00);
+}
+.slide{
+    position: relative;
+
 }
 
-.img-carrosel {
-    width: 400px;
-    height: 300px;
-    border-radius: 50%;
-}
-
-
-.text-gradient {
-    background: linear-gradient(to right, #FF8000, #FFFF00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 2rem;
-    margin: 0;
-}
 
 .menu {
-   
-    background-color:#333;
+    border-bottom: 1px solid #ec9034;
+    background-color:#556b2f;
     padding: 20px 10px;
     overflow-x: auto;
     white-space: nowrap;
@@ -54,12 +40,12 @@ body {
 }
 
 .menu2 {
-   
+    
     padding: 20px 10px;
     overflow-x: auto;
     white-space: nowrap;
     text-align: center;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #556b2f;
 }
 
 .menu2::-webkit-scrollbar {
@@ -78,7 +64,7 @@ body {
 
 .menu2 li a {
     text-decoration: none;
-    color: #333;
+    color: #556b2f;
     padding: 10px 20px;
     border-radius: 20px;
     font-weight: bold;
@@ -93,15 +79,17 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 8px;
+    
 }
 
 .menu li a {
+    border-bottom: 1px solid #ec9034;
     text-decoration: none;
-    background: linear-gradient(to right, #FF8000, #FFFF00);
+    background: linear-gradient(to right, #f8ba7c, #d37a21);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 10px 5px;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: black;
     font-weight: bold;
     transition: 0.3s;
@@ -112,21 +100,34 @@ body {
 
 
 .produtos {
-   
+    margin-top: -4px;
+    background-color: #556b2f;
+    color:#f2c68b;
     padding: 20px;
-    margin-bottom: -1px;
+    margin-bottom: -0.5px;
 }
 
 .produto {
-    
+
     display: flex;
     align-items: center;
     border-radius: 10px;
     margin: 10px 0;
     padding: 15px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid black;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #ec9034;
 }
+
+.produto2 {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #556b2f;
+}
+
 
 .img-produto {
     height: 120px;
@@ -136,46 +137,66 @@ body {
     margin-right: 20px;
 }
 
+
+
+.container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    transition: height 0.3s ease;
+    height: auto;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.child {
+    margin-top: 0;
+    flex: none;
+    width: 100%;
+    height: auto;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start; /* Começa no topo */
+    padding-top: 20px; /* Espaço opcional no topo */
+}
+
+.produto3 {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    border-radius: 10px;
+    margin:10px 0;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #556b2f;
+}
+
+
 .legenda p {
     margin: 5px 0;
     text-align: left;
-    color: black;
+    color: #ec9034;
+}
+
+.legenda2 p {
+    margin: 5px 0;
+    text-align: left;
+    color: #556b2f;
 }
 
 h1 {
     padding-top: 10px;
     text-align: center;
-    color: black;
+    color:#ec9034;
     font-size: 1.8rem;
 }
 
-.carrossel {
-      width: 100%;
-      height: 500px;
-      overflow: hidden;
-      position: relative;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      aspect-ratio: 2 / 1; /* Mantém proporção */
-    }
-
-    .slides {
-      display: flex;
-      width: 300%;
-      height: 100%;
-      animation: deslizar 100s infinite;
-    }
-
-    .slide {
-      width: 100%;
-      flex-shrink: 0;
-      height: 100%;
-    }
-
-    .slide img {
-      width: 100%;
-      height: 100%;
-      object-fit:; /* ou use 'contain' se preferires ver tudo */
-    }
 
     @keyframes deslizar {
       0% { transform: translateX(0); }
@@ -185,8 +206,8 @@ h1 {
     }
 .rodape {
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #556b2f;
+    color: #ec9034;
     text-align: center;
     font-size: 0.9rem;
 }
