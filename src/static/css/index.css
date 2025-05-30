@@ -90,7 +90,6 @@ body {
     -webkit-text-fill-color: transparent;
     padding: 10px 5px;
     border-radius: 15px;
-    background-color: black;
     font-weight: bold;
     transition: 0.3s;
 }
