@@ -494,32 +494,7 @@
        
     </div>
 
-    <script>
-        const container = document.querySelector('.container');
-const children = document.querySelectorAll('.child');
-
-function adjustHeight() {
-    const scrollLeft = container.scrollLeft;
-    const viewportWidth = window.innerWidth;
-
-    const index = Math.round(scrollLeft / viewportWidth);
-    const currentChild = children[index];
-
-    if (currentChild) {
-        container.style.height = currentChild.scrollHeight + 'px';
-    }
-}
-
-container.addEventListener('scroll', () => {
-    clearTimeout(container._scrollTimeout);
-    container._scrollTimeout = setTimeout(adjustHeight, 100);
-});
-
-window.addEventListener('resize', adjustHeight);
-window.addEventListener('load', adjustHeight);
-
-
-    </script>
+    
     
 </body>
 </html>
