@@ -1,6 +1,6 @@
 body {
     
-    background-color: white;
+    background-color: #556b2f;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -15,6 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 .slide{
     position: relative;
@@ -23,7 +24,9 @@ body {
 
 
 .menu {
-    border-bottom: 1px solid #ec9034;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     background-color:#556b2f;
     padding: 20px 10px;
     overflow-x: auto;
@@ -36,11 +39,16 @@ body {
 }
 
 .menu2 {
+    position: sticky;
+    top: 0;
+    z-index: 2;
     display: flex;
     padding: 20px 0;
     overflow-x: auto;
     text-align: center;
-    border-bottom: 1px solid #556b2f;
+    background-color: #ec9034;
+    justify-content: center;
+
 }
 
 .menu2::-webkit-scrollbar {
@@ -77,13 +85,10 @@ body {
 }
 
 .menu li a {
-    border-bottom: 1px solid #ec9034;
+   
     text-decoration: none;
-    background: linear-gradient(to right, #f8ba7c, #d37a21);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 10px 5px;
-    border-radius: 15px;
+    color: #ec9034;
+    padding: 10px 8px;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -194,6 +199,27 @@ h1 {
     font-size: 1.8rem;
 }
 
+h2 {
+    margin-top: 12px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+button{
+    background-color: #556b2f;
+    color: #ec9034;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: #ec9034;
+}
 
     @keyframes deslizar {
       0% { transform: translateX(0); }
@@ -228,5 +254,9 @@ h1 {
     .menu li a {
         width: 100%;
         max-width: 300px;
+    }
+
+    .menu2{
+        justify-content: none;
     }
 }
