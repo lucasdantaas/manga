@@ -518,6 +518,18 @@
     }
 });
 
+window.addEventListener('scroll', function() {
+    const menu2 = document.querySelector('.menu2');
+    const menu2Top = menu2.getBoundingClientRect().top;
+    const body = document.body;
+
+    if (menu2Top <= 0) {
+        body.style.backgroundColor = '#ec9034'; // Cor do segundo menu (laranja)
+    } else {
+        body.style.backgroundColor = '#556b2f'; // Cor do primeiro menu (verde)
+    }
+});
+
     </script>
 </body>
 </html>
