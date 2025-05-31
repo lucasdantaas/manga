@@ -6,12 +6,7 @@ body {
     padding: 0;
 }
 
-img{
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
+
 
 
 .img{
@@ -123,7 +118,7 @@ img{
 }
 
 
-.img-produto {
+.produto img {
     height: 120px;
     width: 120px;
     border-radius: 50%;
@@ -131,7 +126,22 @@ img{
     margin-right: 20px;
 }
 
+.produto2 img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
 
+.produto3 img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit:fill;
+    margin-right: 20px;
+
+}
 
 .container {
     display: flex;
