@@ -6,7 +6,12 @@ body {
     padding: 0;
 }
 
-
+img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 
 .img{
@@ -17,10 +22,7 @@ body {
     align-items: center;
     background-color: white;
 }
-.slide{
-    position: relative;
 
-}
 
 
 .menu {
@@ -29,14 +31,10 @@ body {
     z-index: 1;
     background-color:#556b2f;
     padding: 20px 10px;
-    overflow-x: auto;
     white-space: nowrap;
     text-align: center;
 }
 
-.menu::-webkit-scrollbar {
-    display: none;
-}
 
 .menu2 {
     position: sticky;
@@ -44,16 +42,14 @@ body {
     z-index: 2;
     display: flex;
     padding: 20px 0;
-    overflow-x: auto;
     text-align: center;
     background-color: #ec9034;
     justify-content: center;
+    white-space: nowrap;
+
 
 }
 
-.menu2::-webkit-scrollbar {
-    display: none;
-}
 
 .menu2 ul {
     list-style: none;
