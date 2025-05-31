@@ -506,27 +506,17 @@
 
     
     <script>
-        window.addEventListener('scroll', function() {
-    const menu2 = document.querySelector('.menu2');
+    window.addEventListener('scroll', function() {
     const menu = document.querySelector('.menu');
-    const menu2Top = menu2.getBoundingClientRect().top;
-
-    if (menu2Top <= 0) {
-        menu.style.visibility = 'hidden';
-    } else {
-        menu.style.visibility = 'visible';
-    }
-});
-
-window.addEventListener('scroll', function() {
     const menu2 = document.querySelector('.menu2');
     const menu2Top = menu2.getBoundingClientRect().top;
-    const body = document.body;
 
     if (menu2Top <= 0) {
-        body.style.backgroundColor = '#ec9034'; // Cor do segundo menu (laranja)
+        menu.style.display = 'none'; // Esconde o menu 1
+        document.body.style.backgroundColor = '#ec9034'; // Fundo laranja
     } else {
-        body.style.backgroundColor = '#556b2f'; // Cor do primeiro menu (verde)
+        menu.style.display = 'flex'; // Mostra o menu 1
+        document.body.style.backgroundColor = '#556b2f'; // Fundo verde
     }
 });
 
