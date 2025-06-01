@@ -23,12 +23,12 @@
     <div class="conteudo">
         <div class="produtos">
             <h1 id="almoco">Almoço</h1>
-            <p style="text-align: center;color: #ec9034;">Segunda a Sexta - 11:30 ás 14:00</p>
+            <p style="text-align: center;color: #ec9034;">Segunda à Sexta - 11:30 às 14:00</p>
             <div class="produto">
                 <img src="src/static/image/almoço.jpg" alt="" class="img-produto">
                 <div class="legenda">
                     <strong><p>Segunda-feira</p></strong>
-                    <p>Fricassê de frango,arroz branco,feijão,legumes ou salada.</p>
+                    <p>Fricassê de frango, arroz branco, feijão, legumes ou salada.</p>
                     <strong><p>R$30,00</p></strong>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                 <img src="src/static/image/almoço.jpg" alt="" class="img-produto">
                 <div class="legenda">
                     <strong><p>Terça-feira</p></strong>
-                    <p>Filé de tilápia á Portuguesa, arroz branco,feijão,purê de abóbora e salada.</p>
+                    <p>Filé de tilápia à Portuguesa, arroz branco, feijão, purê de abóbora e salada.</p>
                     <strong><p>R$30,00</p></strong>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                 <img src="src/static/image/almoço.jpg" alt="" class="img-produto">
                 <div class="legenda">
                     <strong><p>Quarta-feira</p></strong>
-                    <p>Isca de frango com legumes,arroz branco,feijão,creme de milho e salada.</p>
+                    <p>Isca de frango com legumes, arroz branco, feijão, creme de milho e salada.</p>
                     <strong><p>R$30,00</p></strong>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                 <img src="src/static/image/almoço.jpg" alt="" class="img-produto">
                 <div class="legenda">
                     <strong><p>Quinta-feira</p></strong>
-                    <p>Picadinho de carne,arroz branco,feijão,farofa de cenoura e salada.</p>
+                    <p>Picadinho de carne, arroz branco, feijão, farofa de cenoura e salada.</p>
                     <strong><p>R$30,00</p></strong>
                 </div>
             </div>
@@ -60,7 +60,7 @@
                 <img src="src/static/image/almoço.jpg" alt="" class="img-produto">
                 <div class="legenda">
                     <strong><p>Sexta-feira</p></strong>
-                    <p>Coxinha de asa assada,arroz branco,feijão,creme de milho e salada.</p>
+                    <p>Coxinha de asa assada, arroz branco, feijão, creme de milho e salada.</p>
                     <strong><p>R$30,00</p></strong>
                 </div>
             </div>
@@ -203,7 +203,7 @@
             <div class="produto">
                 <img src="src/static/image/bolo.jpeg" alt="" class="img-produto">
                 <div class="legenda">
-                    <strong><p>Bolo (fatia)</p></strong>
+                    <strong><p>Bolo(fatia)</p></strong>
                     <strong><p>R$9,00</p></strong>
                 </div>
             </div>
@@ -305,7 +305,7 @@
                             <img src="src/static/image/sucos.jpeg" alt="" class="img-produto">
                             <div class="legenda2">
                                 <strong><p>Detox</p></strong>
-                                <p>Abacaxi, couve. gengibre e maçã</p>
+                                <p>Abacaxi, couve, gengibre e maçã</p>
                                 <strong><p>R$16,70</p></strong>
                             </div>
                         </div>
@@ -491,7 +491,7 @@
         <strong><p>Horário de Funcionamento</p></strong>
         <p>Seg a Sex: 7h às 21:30</p>
         <p>Sábado e feriados: 7h às 14:30</p>
-        <p>Domingo: 9hrs as 13hrs</p>
+        <p>Domingo: 9h às 13h</p>
         </div>
         <div style="border-top: 1px solid #ec9034;">
         <strong><p>Endereço</p></strong>
@@ -511,12 +511,17 @@
     const menu2Top = menu2.getBoundingClientRect().top;
 
     if (menu2Top <= 0) {
-        menu.style.display = 'none'; 
+        menu.style.position = 'none'; 
+        menu.style.display = 'none';
+
+        menu.style.backgroundColor = '#ec9034';
         // Esconde o menu 1
         document.body.style.backgroundColor = '#ec9034'; // Fundo laranja
     } else {
         menu.style.display = 'flex'; // Mostra o menu 1
-        document.body.style.backgroundColor = '#556b2f'; // Fundo verde
+        menu.style.backgroundColor = '#556b2f';
+        document.body.style.backgroundColor = '#556b2f';
+         // Fundo verde
     }
 });
 

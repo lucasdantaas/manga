@@ -38,23 +38,26 @@ body {
     top: 0;
     z-index: 2;
     display: flex;
+    width: 100%;
     padding: 20px 0;
     text-align: center;
     background-color: #ec9034;
     justify-content: center;
-    white-space: nowrap;
+    width: 100%;
 
 
 }
 
 
 .menu2 ul {
+
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 8px;
 }
 
 .menu2 li a {
@@ -94,7 +97,8 @@ body {
     margin-top: -7px;
     background-color: #556b2f;
     color:#f2c68b;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;   
     margin-bottom: -0.5px;
 }
 
