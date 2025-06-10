@@ -75,20 +75,20 @@
                 <img src="src/static/image/tapioca.jpeg" alt="" class="img-produto">
                 <div class="legenda2" >
                     <strong><p>Tapioca</p></strong>
-                    <p>Opções de recheios:</p>
-                    <p>(Valor para 1 recheio.A partir de 2, o adicional é de R$3,50 por item)</p>
                     <strong><p>Queijo Minas, Mussarela, Frango, Peito de peru ou Ovos.</p></strong>
                     <strong><p>R$13,00</p></strong>
+                    <p>Opções de recheios:</p>
+                    <p>(Valor para 1 recheio.A partir de 2, o adicional é de R$3,50 por item)</p>
                 </div>
             </div>
             <div class="produto2">
                 <img src="src/static/image/crepioca.jpeg" alt="" class="img-produto">
                 <div class="legenda2">
                     <strong><p>Crepioca</p></strong>
-                    <p>Opções de recheios:</p>
-                    <p>(Valor para 1 recheio.A partir de 2, o adicional é de R$3,50 por item)</p>
                     <strong><p>Queijo Minas, Mussarela, Frango, Peito de peru ou Ovos.</p></strong>
                     <strong><p>R$13,00</p></strong>
+                    <p>Opções de recheios:</p>
+                    <p>(Valor para 1 recheio.A partir de 2, o adicional é de R$3,50 por item)</p>
                 </div>
             </div>
             <div class="produto2">
@@ -103,10 +103,10 @@
                 <img src="src/static/image/omelete.jpeg" alt="" class="img-produto">
                 <div class="legenda2">
                     <strong><p>Omelete Simples com adionais</p></strong>
-                    <p>Opções de recheios:</p>
-                    <p>(Valor para 1 recheio.A partir de 2, o adicional é de R$3,50 por item)</p>
                     <strong><p>Frango ou Peito de peru.</p></strong>
                     <strong><p>R$24,50</p></strong>
+                    <p>Opções de recheios:</p>
+                    <p>(Valor para 1 recheio.A partir de 2, o adicional é de R$3,50 por item)</p>
                 </div>
             </div>
             <div class="produto2">
@@ -136,6 +136,7 @@
                     <p>Com ovos(2unid)</p>
                     <strong><p>R$13,00</p></strong>
                     <p>Conferir adicionais.R$3,50 por item.</p>
+                    <strong><p>Queijo Minas, Mussarela, Frango, Peito de peru ou Ovos.</p></strong>
                 </div>
             </div>
            <div class="produto2">
@@ -159,7 +160,7 @@
                 <div class="legenda2">
                     <strong><p>Salgados</p></strong>
                     <p>Consultar sabores disponiveis</p>
-                    <strong><p>R$13,00</p></strong>
+                    <strong><p>R$9,50</p></strong>
                 </div>
             </div>
            <div class="produto2">
@@ -175,6 +176,8 @@
                 <div class="legenda2">
                     <strong><p>Pão de queijo(5 unid)</p></strong>
                     <strong><p>R$7,00</p></strong>
+                    <strong><p>Pão de queijo(1 unid)</p></strong>
+                    <strong><p>R$2,50</p></strong> 
                 </div>
             </div>
             <div class="produto2">
@@ -188,9 +191,11 @@
             <div class="produto2">
                 <img src="src/static/image/tapioca.jpeg" alt="" class="img-produto">
                 <div class="legenda2">
-                    <strong><p>Sanduiche Natural</p></strong>
-                    <p>Consultar sabores disponiveis</p>
-                    <strong><p>R$19,80</p></strong>
+                    <strong><p>Panqueca</p></strong>
+                    <p>Banana e mel</p>
+                    <strong><p>R$16,20</p></strong>
+                    <p>Frango com legumes</p>
+                    <strong><p>R$18,20</p></strong>
                 </div>
             </div>
            
@@ -513,11 +518,12 @@
     if (menu2Top <= 0) {
         menu.style.position = 'none'; 
         menu.style.display = 'none';
-
+        menu.classList.add('hidden');
         menu.style.backgroundColor = '#ec9034';
         // Esconde o menu 1
         document.body.style.backgroundColor = '#ec9034'; // Fundo laranja
     } else {
+        menu.classList.remove('hidden');
         menu.style.display = 'flex'; // Mostra o menu 1
         menu.style.backgroundColor = '#556b2f';
         document.body.style.backgroundColor = '#556b2f';
