@@ -31,7 +31,7 @@ body {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     display: flex;
-    justify-content:center; /* melhor para scroll */
+    justify-content:flex-start; /* melhor para scroll */
     white-space: nowrap; /* importante! */
 }
 
@@ -94,7 +94,7 @@ body {
 
 .menu-item{
     object-fit: cover;
-    width: 250px;
+    width: 150px;
     height: 130px;
     border-radius: 15px;
     overflow: hidden;
