@@ -536,12 +536,12 @@ window.addEventListener('scroll', function () {
     // 1️⃣ Esconde menu principal ao colar o menu2 no topo
     if (menu2Top <= 0) {
         menu.classList.add('hidden');
-        document.body.style.backgroundColor = '#ec9034'; // Fundo laranja
+// Fundo laranja
     } else {
         menu.classList.remove('hidden');
         menu.style.position = 'sticky';
         menu.style.top = '0';
-        document.body.style.backgroundColor = 'white';
+
     }
 
     // 2️⃣ Volta o scroll horizontal para o início quando está no topo da página
