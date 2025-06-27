@@ -89,7 +89,7 @@ body {
 
 .menu-item{
     object-fit: cover;
-    width: 180px;
+    width: 200px;
     height: 100px;
     border-radius: 15px;
     overflow: hidden;
@@ -142,8 +142,7 @@ body {
     margin-top: -7px;
     background-color: #556b2f;
     color:#f2c68b;
-    padding-top: 20px;
-    padding-bottom: 20px;   
+    padding: 20px 10px;  
     margin-bottom: -0.5px;
 }
 
@@ -221,7 +220,6 @@ body {
     align-items: center;
     justify-content: flex-start; /* Começa no topo */
     padding-top: 50px;
-
     margin: 10px 10px;
     /* Espaço opcional no topo */
 }
