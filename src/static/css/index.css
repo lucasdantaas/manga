@@ -1,6 +1,5 @@
 body {
-    
-    background-color: #556b2f;
+    background-color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -24,14 +23,23 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    display: flex;
-    justify-content: center;
-    background-color:#556b2f;
-    padding: 20px 10px;
-    white-space: nowrap;
+    background-color: white;
+    padding:  20px;
     text-align: center;
     transition: opacity 0.3s ease;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    justify-content:center; /* melhor para scroll */
+    white-space: nowrap; /* importante! */
 }
+
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
 
 .menu.hidden {
     opacity: 0;
@@ -43,19 +51,21 @@ body {
     top: 0;
     z-index: 999;
     display: flex;
-    width: 100%;
-    padding: 20px 0;
+    padding: 20px ;
     text-align: center;
-    background-color: #ec9034;
+    background-color: white;
     justify-content: center;
-    width: 100%;
 
 
 }
 
+.menu li:first-child {
+    margin-left: 20px;
+}
+
 
 .menu2 ul {
-
+    display: flex;;
     justify-content: center;
     list-style: none;
     margin: 0;
@@ -65,30 +75,65 @@ body {
     gap: 8px;
 }
 
+.menu li{
+    flex: 0 0 auto;
+    border-radius: 15px;
+    margin: 0 10px 10px;
+    transition: opacity 0.5s ease;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(30px);
+    transition: box-shadow 0.3s ease;
+    scroll-snap-align: start;
+
+
+}
+
+.hide-images li {
+    box-shadow: none !important;
+}
+
+.menu-item{
+    object-fit: cover;
+    width: 250px;
+    height: 130px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin:0 0 10px 0;
+    transition: opacity 0.5s ease;
+}
+
+
+.hide-images .menu-item {
+   opacity: 0;
+   display: none;
+}
+
+
+
+
+
 .menu2 li a {
     text-decoration: none;
     color: #556b2f;
-    padding: 10px 0;
+    padding: 10px 8px;
     border-radius: 20px;
     font-weight: bold;
     
 }
 
 .menu ul {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 8px;
-    
+    flex-wrap: nowrap; /* impede quebra de linha */
 }
 
 .menu li a {
-   
+    display: grid;
     text-decoration: none;
-    color: #ec9034;
+    color: #556b2f;
     padding: 10px 8px;
     font-weight: bold;
     transition: 0.3s;
@@ -115,7 +160,7 @@ body {
     margin: 10px;
     padding: 15px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-    border-bottom: 2px solid #ec9034;
+    border-bottom: 4px solid #ec9034;
 }
 
 .produto2 {
@@ -125,7 +170,7 @@ body {
     margin: 10px;
     padding: 15px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-    border-bottom: 2px solid #556b2f;
+    border-bottom: 4px solid #ec9034;
 }
 
 
@@ -162,6 +207,7 @@ body {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     height: auto;
+   
 }
 
 .container::-webkit-scrollbar {
@@ -169,7 +215,7 @@ body {
 }
 
 .child {
-    margin-top: 0;
+    margin-top: 50px;
     flex: none;
     width: 100%;
     height: auto;
@@ -179,8 +225,8 @@ body {
     justify-content: center;
     align-items: center;
     justify-content: flex-start; /* Começa no topo */
-    padding-top: 20px;
-    padding: 20px 10px;
+    padding-top: 50px;
+
     margin: 10px 10px;
     /* Espaço opcional no topo */
 }
@@ -193,14 +239,14 @@ body {
     margin: 10px;
     padding: 15px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-    border-bottom: 3px solid #556b2f;
+    border-bottom: 4px solid #ec9034;
 }
 
 
 .legenda p {
     margin: 5px 0;
     text-align: left;
-    color: #ec9034;
+    color: white;
 }
 
 .legenda2 p {
@@ -210,9 +256,10 @@ body {
 }
 
 h1 {
-    padding-top: 10px;
+    margin-top: 50px;
+    padding-top: 20px;
     text-align: center;
-    color:#ec9034;
+    color:white;
     font-size: 1.8rem;
 }
 
@@ -221,6 +268,7 @@ h2 {
     padding-top: 10px;
     text-align: center;
     font-size: 1.8rem;
+    color: white;
 }
 
 
@@ -253,21 +301,18 @@ button{
 }
 
 @media (max-width: 768px) {
-    .produto {
-        
-        align-items: center;
-        text-align: center;
-    }
-
-    .menu ul {
-        
+    .container {
+        flex-direction: column;
         align-items: center;
     }
 
-    .menu li a {
-        width: 100%;
-        max-width: 300px;
+    .menu {
+        justify-content:flex-start; 
+
     }
 
    
 }
+
+
+
