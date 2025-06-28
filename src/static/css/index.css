@@ -168,6 +168,12 @@ body {
     border-bottom: 4px solid #ec9034;
 }
 
+.conteudo {
+
+    padding: 20px;
+    padding-left: 20px;
+    margin-bottom: -0.5px;
+}
 
 .produto img {
     height: 120px;
