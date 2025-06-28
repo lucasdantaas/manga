@@ -1,8 +1,8 @@
 body {
+
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -142,7 +142,7 @@ body {
     margin-top: -7px;
     background-color: #556b2f;
     color:#f2c68b;
-    padding: 20px 10px;
+    padding: 20px 10px;  
     margin-bottom: -0.5px;
 }
 
@@ -195,8 +195,7 @@ body {
 
 .container {
     display: flex;
-    padding: 20px;
-
+    padding: 20px 10px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -221,8 +220,7 @@ body {
     align-items: center;
     justify-content: flex-start; /* Começa no topo */
     padding-top: 50px;
-
-    
+    margin: 10px 10px;
     /* Espaço opcional no topo */
 }
 
