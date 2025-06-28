@@ -142,7 +142,8 @@ body {
     margin-top: -7px;
     background-color: #556b2f;
     color:#f2c68b;
-    padding: 20px 0;  
+    padding: 20px;
+    padding-left: 20px; 
     margin-bottom: -0.5px;
 }
 
