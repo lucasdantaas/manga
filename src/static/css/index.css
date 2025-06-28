@@ -142,8 +142,7 @@ body {
     margin-top: -7px;
     background-color: #556b2f;
     color:#f2c68b;
-    padding: 20px;
-    padding-left: 20px; 
+    padding: 20px 10px;
     margin-bottom: -0.5px;
 }
 
@@ -197,7 +196,7 @@ body {
 .container {
     display: flex;
     padding: 20px;
-    padding-left: 20px;
+
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -222,9 +221,8 @@ body {
     align-items: center;
     justify-content: flex-start; /* Começa no topo */
     padding-top: 50px;
-    padding-left: 15px;
-    margin: 15px;
-    margin-left: 15px;
+
+    
     /* Espaço opcional no topo */
 }
 
