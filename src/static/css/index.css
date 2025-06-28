@@ -221,8 +221,9 @@ body {
     align-items: center;
     justify-content: flex-start; /* Começa no topo */
     padding-top: 50px;
-    padding-left: 25px;
-    margin: 10px 10px;
+    padding-left: 20px;
+    margin: 15px;
+    margin-left: 15px;
     /* Espaço opcional no topo */
 }
 
