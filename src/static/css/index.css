@@ -7,11 +7,11 @@ body {
 
 .inf {
     height: 35px;
-    padding: 0 5px 10px 5px ;
+    padding: 10px;
     background-color: #556b2f;
     color: white;
     display: flex;
-    justify-content:flex-start;
+    justify-content:center;
     text-align: center;
     position: sticky;
     top: 0;
