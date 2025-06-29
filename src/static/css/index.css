@@ -5,7 +5,19 @@ body {
     padding: 0;
 }
 
+.inf {
+    height: 35px;
+    padding:10px;
+    background-color: #556b2f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
+}
 
 
 .img{
