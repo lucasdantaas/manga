@@ -11,7 +11,7 @@ body {
     background-color: #556b2f;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     text-align: center;
     position: sticky;
     top: 0;
